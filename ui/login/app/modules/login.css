@@ -1,0 +1,27 @@
+@import url("../../../common/elastic.css");
+
+.login-input-container {
+    margin: 5px;
+}
+
+.login-page {
+  background-image: -webkit-linear-gradient(right, #377f55, rgba(118, 177, 67, 0.0)), -webkit-linear-gradient(#006280, #006280);
+  background-image: linear-gradient(to left, #377f55, rgba(118, 177, 67, 0.0)), linear-gradient(#006280, #006280);
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.login-page-header {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 141px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 37px; /* to vertically center logo inside `login-page-header` */
+  left: 50%;
+  margin-left: -152px; /* we have to give negative margin (half of width) to center logo horizontally */
+  height: 67px;
+  width: 304px;
+}

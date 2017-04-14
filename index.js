@@ -6,7 +6,7 @@ var _ = require("lodash");
 
 app.use(bodyParser.json());
 app.use("/login", express.static("public/login.html"));
-app.use("/app", express.static("public/app.html"));
+app.use("/app\*", express.static("public/app.html"));
 
 var port = 3000;
 if (_.isString(process.argv[2])) {

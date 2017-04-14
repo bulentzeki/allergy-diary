@@ -2,6 +2,7 @@ import {connect} from "react-redux";
 import style from "./main.css";
 import AddEditEvent from "./AddEditEvent";
 import EventList from "./EventList";
+import {Route} from "react-router-dom";
 
 export class Main extends React.Component {
   render() {
@@ -15,8 +16,8 @@ export class Main extends React.Component {
 
         <div className={style["app-body"]}>
           <div className={style["col-10"]}>
-            {this.props.children}
-            <EventList/>
+            <Route path={`${this.props.match.path}/event-list`} component={EventList}/>
+            <Route path={`${this.props.match.path}/add-edit-event/:eventId`} component={AddEditEvent}/>
           </div>
         </div>
       </div>
